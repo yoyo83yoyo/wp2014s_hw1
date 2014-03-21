@@ -15,7 +15,7 @@ a{
 
 .nav a{
   font-size: 1em;
-  color: rgb(200, 50 , 50);
+  color: rgb(250,250,250);
 }
 
 h1{
@@ -39,6 +39,7 @@ h2{
 .menu>li{ 
   display: inline-block; 
   position: relative;
+    background: rgb(50,50,150);
   border: 1px solid blue;
   border-right: 0;
   padding: .2em 1em;
