@@ -129,6 +129,11 @@ h2{
   float:right;
 }
 
+.lightview{
+  color: rgb(250,250,250);
+  margin:1em 1em;
+  background:rgb(50,50,50)
+}
 
 .globalfooter_bottomcap{
   position: relative;
