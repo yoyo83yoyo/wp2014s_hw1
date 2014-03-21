@@ -15,7 +15,7 @@ a{
 
 .nav a{
   font-size: 1em;
-  color: rgb(200, 0 , 0);
+  color: rgb(200, 50 , 50);
 }
 
 h1{
@@ -36,46 +36,35 @@ h2{
 .menu{
   display: inline-block;
 }
-.menu>li{
-  /* 讓 <li> 能橫著排（如 inline 元素之 normal flow） */
-  display: inline-block;
-  /* 設定 absolute positioning 之 .submenu 的位置參考 */
+.menu>li{ 
+  display: inline-block; 
   position: relative;
-
-  /* 外觀樣式 */
   border: 1px solid blue;
   border-right: 0;
   padding: .2em 1em;
 }
-/* 外觀樣式 */
 .menu>li:last-child{
   border-right: 1px solid blue;
 }
 
 .submenu{
-  /* 讓 .submenu 變成 absolute positioning */
+  
   position: absolute;
-  /* 隱藏 .submenu */
   display: none;
-
-  /* 外觀樣式 */
   left: -1px; top: 100%; width: 100%;
   text-align: center;
-  background: #3c3;
-  border: 1px solid green;
+  background: rgb(50,50,150);
+  border: 1px solid blue;
 }
 
 .menu>li:hover .submenu{
-  /* 滑鼠移到 .nav 的 li 上時，顯示 .submenu */
   display: block;
 }
-/* 外觀樣式 */
 .submenu li{
   padding: .5em 0;
   color: black;
   cursor: pointer;
 }
-/* 外觀樣式 */
 .submenu li:hover{
   color: white;
 }
